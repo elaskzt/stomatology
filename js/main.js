@@ -1,9 +1,25 @@
 $(document).ready(function() {
 
-	var line = new Vivus('sec-1-svg-path', {type: 'scenario-sync', duration: 100, start: 'autostart'});
-
 	var wow = new WOW({	mobile: false	});
 	wow.init();
+
+	$(".fancybox-button").fancybox({
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: false,
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}
+	});
+
+	$('.elas-logo').hover(function() {
+		$(this).children('.elas-name').css('fill', '#fff');
+		$(this).children('.elas-link').css('fill', '#fff');
+	}, function() {
+		$(this).children('.elas-name').css('fill', '#71B6E9');
+		$(this).children('.elas-link').css('fill', '#71B6E9');
+	});
 
  });
 

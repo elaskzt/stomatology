@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'SanOleg';
-	src:url('fonts/SanOleg.eot?-i59y5t');
-	src:url('fonts/SanOleg.eot?#iefix-i59y5t') format('embedded-opentype'),
-		url('fonts/SanOleg.woff?-i59y5t') format('woff'),
-		url('fonts/SanOleg.ttf?-i59y5t') format('truetype'),
-		url('fonts/SanOleg.svg?-i59y5t#SanOleg') format('svg');
+	font-family: 'stomato';
+	src:url('fonts/stomato.eot?6wlspn');
+	src:url('fonts/stomato.eot?#iefix6wlspn') format('embedded-opentype'),
+		url('fonts/stomato.woff?6wlspn') format('woff'),
+		url('fonts/stomato.ttf?6wlspn') format('truetype'),
+		url('fonts/stomato.svg?6wlspn#stomato') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 i {
-	font-family: 'SanOleg';
+	font-family: 'stomato';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,11 +23,15 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-person:before {
+.icon-email:before {
 	content: "\e600";
 }
 
-.icon-tel:before {
+.icon-person:before {
 	content: "\e601";
+}
+
+.icon-tel:before {
+	content: "\e602";
 }
 
