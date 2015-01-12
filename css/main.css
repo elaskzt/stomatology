@@ -48,12 +48,13 @@ ul {
 
 @font-face {
 	font-family: 'helveticaneuecyrlight';
-	src: url('../fonts/helveticaneuecyr-light-webfont.eot');
-	src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
-	     url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+
+	src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+	src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+	url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -79,14 +80,15 @@ ul {
 }
 
 @font-face {
-  font-family: 'helveticaneuecyrbold';
-  src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
-  src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
-       url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
-       url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'helveticaneuecyrbold';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+	src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+	url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+	url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype');
 }
 
 @media (min-width: 992px) {
@@ -371,9 +373,12 @@ SECTION-2
 	line-height: 1.2;
 	color: #24333e;
 }
+
 .sec-2-header span {
 	color: #fff;
 	background-color: #e65441;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .sec-2-subheader {
@@ -456,10 +461,10 @@ SECTION-3
 }
 
 .sec-3-img {
+	margin-top: 40px;
 	margin-right: 60px;
 	margin-bottom: 105px;
 	float: left;
-	margin-top: 40px;
 }
 
 .sec-3-txt-top {
@@ -650,6 +655,7 @@ SECTION-5
 	font-family: 'bebas_neuebold';
 	font-size: 62px;
 	color: #fff;
+	transition: all ease-in-out .3s;
 }
 
 .work-steps-txt {
@@ -660,6 +666,9 @@ SECTION-5
 	line-height: 1.375;
 	color: #24333e;
 	background-color: #fff;
+	top: -7px;
+	position: relative;
+	transition: all ease-in-out .3s;
 }
 
 .custom-1 {
@@ -791,8 +800,6 @@ SECTION-6
 
 
 
-
-
 /********************
 SECTION-7
 ********************/
@@ -860,8 +867,8 @@ SECTION-8
 }
 
 .map {
-	max-width: 621px;
 	width: 100%;
+	max-width: 621px;
 	height: 247px;
 	border: 4px solid #24323e;
 }
@@ -943,35 +950,37 @@ FOOTER
 ********************/
 
 .footer {
-	background-color: #24333e;
 	min-height: 44px;
+	background-color: #24333e;
 }
 
 .elas-logo {
 	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
 	top: -36px;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .elas-circle {
-	fill-rule: evenodd;
+	transition: all ease-in .2s;
+
 	clip-rule: evenodd;
 	fill: #24333e;
-	transition: all ease-in .2s;
+	fill-rule: evenodd;
 }
 
 .elas-name {
-	fill-rule: evenodd;
 	clip-rule: evenodd;
-	fill: #71B6E9;
+	fill: #71b6e9;
+	fill-rule: evenodd;
 }
 
 .elas-link {
-	fill: #71B6E9;
 	font-family: 'helveticaneuecyrlight';
 	font-size: 12px;
 	transition: all ease-in .2s;
+
+	fill: #71b6e9;
 }
