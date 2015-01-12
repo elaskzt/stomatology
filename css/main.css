@@ -830,6 +830,10 @@ SECTION-7
 	height: auto;
 }
 
+.fancybox-button:hover {
+	cursor: zoom-in;
+}
+
 
 
 /********************
